@@ -12,9 +12,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         File dosya = new File("Ogrenci Bilgi Sistemi.txt");
         FileWriter yaz = new FileWriter(dosya);
-        BufferedWriter bYaz = new BufferedWriter(yaz);
+        BufferedWriter bYaz = new BufferedWriter(yaz);/* Filewriter dosyaya yazma işlemi için gerekli */
         Scanner sc = new Scanner(System.in);
-
+        /*  Universitemizi, ogretim elemanlarımızı ve öğrencilerimizi oluşturalım  */
         Universite deu = new Universite("DokuzEylulÜniversitesi");
         Ogretim_Elemani ahmet = new Ogretim_Elemani("Ahmet", "Yurttaş", 20110016);
         Ogretim_Elemani ayse = new Ogretim_Elemani("Ayşe", "Yurttaş", 20110017);
@@ -25,6 +25,8 @@ public class Main {
         Yuksek_Lisans_Ogrencisi y2 = new Yuksek_Lisans_Ogrencisi("Atakan", "Gürsoy", 02, 2);
         Doktora_Ogrencisi d1 = new Doktora_Ogrencisi("John", "Adams", 01, "Veri Madenciliği");
 
+
+        /*Fakülte,bölüm ders ve şubeler calssların içerisindeki metodlardan oluşturuluyor.    */
         deu.fakulteAc("Fen Fakültesi");
         deu.fakulteler.get(0).bolumAc("Bilgisayar Bilimleri");
         deu.fakulteler.get(0).bolumler.get(0).ogretim_uyesi_ata(ahmet);
@@ -48,13 +50,13 @@ public class Main {
         deu.fakulteler.get(0).bolumler.get(0).dersler.get(2).Ogrenci_Ekle(d1);
 
 
-        dosyayaYaz(bYaz, sc, deu);
+        dosyayaYaz(bYaz, sc, deu);/* Fonksiyon gerekli parametreleri alarak dosyaya yazma işlemini kullanıcının isteğine göre gerçekleştiriyor */
 
 
         System.out.println(deu.toString());
         System.out.println(deu.fakulteler.get(0).bolumler.get(0).dersler.get(1).toString());
         System.out.println(deu.fakulteler.get(0).bolumler.get(0).dersler.get(1).subeler.get(0).toString());
-
+    /* Override edilmiş toString metodlarımız ders ve şubeyi yazıyor.   */
 
     }
 

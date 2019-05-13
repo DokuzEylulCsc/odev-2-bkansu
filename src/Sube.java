@@ -13,7 +13,7 @@ public class Sube {
     }
 
     ArrayList<Ogrenci> ogrenciler = new ArrayList<>();
-    public void ogrenciEkle(Ogrenci x){
+    public void ogrenciEkle(Ogrenci x){ /* Derse kayıtlı ogrencilerden bölüme ogrenci kaydeden metod */
         for (int a = 0; a <ders.ogrenciler.size() ; a++) {
             if (ders.ogrenciler.contains(x)) {
                 ogrenciler.add(x);

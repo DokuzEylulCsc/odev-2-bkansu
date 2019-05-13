@@ -13,11 +13,8 @@ public class Ders {
     ArrayList<Ogrenci> ogrenciler = new ArrayList<>();
     int i = 0;
 
-    /*public Iterator getOgrencilerIterator(){
-        return ogrenciler.
-    }*/
 
-    public Ders(String dersAdı,int subeSayisi, Ogretim_Elemani x, Bolum bolum) {
+    public Ders(String dersAdı,int subeSayisi, Ogretim_Elemani x, Bolum bolum) { /* Constructor aynı zamanda şube oluşturucu metod  */
         this.bolum = bolum;
         this.subeSayisi=subeSayisi;
         this.dersAdı = dersAdı;
@@ -39,7 +36,7 @@ public class Ders {
 
     public void Ogretim_Elemanı_Degistir(Ogretim_Elemani x) {
         this.x = x;
-    }
+    } /* Dersin ogretim elemanını değiştirir */
 
     public void Ogrenci_Ekle(Ogrenci x) {
         for (int a = 0; a < bolum.ogrenciler.size(); a++) {

@@ -22,7 +22,7 @@ public class Bolum {
 
     }
 
-
+/* Öğrenci ve öğretim üyesi işlemleri */
     public void ogrenciKayıt(Ogrenci x) {
         ogrenciler.add(x);
     }
@@ -42,7 +42,7 @@ public class Bolum {
 
     int ct = 0;
 
-    public void dersAc(String dersAdı,int subeSayisi, Ogretim_Elemani o) {
+    public void dersAc(String dersAdı,int subeSayisi, Ogretim_Elemani o) {/*  Bölüme ders olusturucu metod */
         Ders x = new Ders(dersAdı, subeSayisi,o, this);
         dersler.add(x);
     }

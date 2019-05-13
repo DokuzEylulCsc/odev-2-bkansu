@@ -8,7 +8,7 @@ public class Fakulte {
     //Bolum[] bolumler = new Bolum[50];
     ArrayList<Bolum> bolumler = new ArrayList();
     //int i=0;
-    public void bolumAc(String bolumAdı)
+    public void bolumAc(String bolumAdı)/* Fakülteye Bölüm olusturucu metod */
     {
         Bolum x = new Bolum(bolumAdı,this);
         bolumler.add(x);

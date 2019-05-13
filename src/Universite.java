@@ -7,7 +7,7 @@ public class Universite {
     ArrayList<Fakulte> fakulteler = new ArrayList();
 
 
-    public void fakulteAc(String fakuklteAdı) {
+    public void fakulteAc(String fakuklteAdı) {/* Fakulte olusturucu metod */
         Fakulte x = new Fakulte(fakuklteAdı, this);
         fakulteler.add(x);
     }
