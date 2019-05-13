@@ -1,6 +1,7 @@
 import ogrenci.Ogrenci;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Sube {
     int no;
@@ -21,6 +22,11 @@ public class Sube {
             }
 
         }
+    }
+
+    public Iterator Iterator(){
+        return ogrenciler.iterator();
+
     }
 
     public void ogrenciSil(Ogrenci x){

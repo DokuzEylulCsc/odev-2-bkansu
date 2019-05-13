@@ -31,6 +31,10 @@ public class Ders {
         }
     }
 
+    public Iterator Iterator(){
+        return ogrenciler.iterator();
+
+    }
 
 
     public void Ogretim_Elemanı_Degistir(Ogretim_Elemani x) {

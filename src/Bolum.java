@@ -1,6 +1,8 @@
 import ogrenci.Ogrenci;
 
+import javax.swing.text.html.HTMLDocument;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Bolum {
 
@@ -14,6 +16,12 @@ public class Bolum {
     int i = 0;
     int j = 0;
     int k = 0;
+
+    public Iterator Iterator(){
+        return ogrenciler.iterator();
+
+    }
+
 
     public void ogrenciKayıt(Ogrenci x) {
         ogrenciler.add(x);

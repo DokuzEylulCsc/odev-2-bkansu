@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class Fakulte {
     String fakülteAdı;
@@ -13,6 +14,10 @@ public class Fakulte {
         bolumler.add(x);
     }
 
+    public Iterator Iterator(int index){
+        return bolumler.get(index).Iterator();
+
+    }
 
     public Fakulte( String fakülteAdı,Universite uni) {
         this.uni=uni;

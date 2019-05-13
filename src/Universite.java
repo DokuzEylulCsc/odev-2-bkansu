@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class Universite {
     String uniAdı;
@@ -9,6 +10,12 @@ public class Universite {
     public void fakulteAc(String fakuklteAdı) {
         Fakulte x = new Fakulte(fakuklteAdı, this);
         fakulteler.add(x);
+    }
+
+
+    public Iterator Iterator(int index,int index2){
+        return fakulteler.get(index).bolumler.get(index2).Iterator();
+
     }
 
     public Universite(String uniAdı) {
