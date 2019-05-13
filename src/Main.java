@@ -28,10 +28,12 @@ public class Main {
         deu.fakulteAc("Fen Fakültesi");
         deu.fakulteler.get(0).bolumAc("Bilgisayar Bilimleri");
         deu.fakulteler.get(0).bolumler.get(0).ogretim_uyesi_ata(ahmet);
-        deu.fakulteler.get(0).bolumler.get(0).dersAc("Veritabanı Yönetimi", ahmet);
-        deu.fakulteler.get(0).bolumler.get(0).dersAc("Bilgisayar Bilimlerine Giriş", ayse);
-        deu.fakulteler.get(0).bolumler.get(0).dersAc("Veriyapıları", sevda);
-        deu.fakulteler.get(0).bolumler.get(0).dersAc("Matematiksel Programlama", ahmet);
+        deu.fakulteler.get(0).bolumler.get(0).ogretim_uyesi_ata(ayse);
+        deu.fakulteler.get(0).bolumler.get(0).ogretim_uyesi_ata(sevda);
+        deu.fakulteler.get(0).bolumler.get(0).dersAc("Veritabanı Yönetimi",1, ahmet);
+        deu.fakulteler.get(0).bolumler.get(0).dersAc("Bilgisayar Bilimlerine Giriş",2, ayse);
+        deu.fakulteler.get(0).bolumler.get(0).dersAc("Veriyapıları",1, sevda);
+        deu.fakulteler.get(0).bolumler.get(0).dersAc("Matematiksel Programlama",1, ahmet);
         deu.fakulteler.get(0).bolumler.get(0).ogrenciKayıt(l1);
         deu.fakulteler.get(0).bolumler.get(0).ogrenciKayıt(l2);
         deu.fakulteler.get(0).bolumler.get(0).ogrenciKayıt(y1);
@@ -40,7 +42,9 @@ public class Main {
         deu.fakulteler.get(0).bolumler.get(0).dersler.get(0).Ogrenci_Ekle(l1);
         deu.fakulteler.get(0).bolumler.get(0).dersler.get(0).Ogrenci_Ekle(l2);
         deu.fakulteler.get(0).bolumler.get(0).dersler.get(1).Ogrenci_Ekle(y2);
+        deu.fakulteler.get(0).bolumler.get(0).dersler.get(1).subeler.get(0).ogrenciEkle(y2);
         deu.fakulteler.get(0).bolumler.get(0).dersler.get(1).Ogrenci_Ekle(y1);
+        deu.fakulteler.get(0).bolumler.get(0).dersler.get(1).subeler.get(1).ogrenciEkle(y1);
         deu.fakulteler.get(0).bolumler.get(0).dersler.get(2).Ogrenci_Ekle(d1);
 
 
@@ -48,6 +52,8 @@ public class Main {
 
 
         System.out.println(deu.toString());
+        System.out.println(deu.fakulteler.get(0).bolumler.get(0).dersler.get(1).toString());
+        System.out.println(deu.fakulteler.get(0).bolumler.get(0).dersler.get(1).subeler.get(0).toString());
 
 
     }

@@ -34,8 +34,8 @@ public class Bolum {
 
     int ct = 0;
 
-    public void dersAc(String dersAdı, Ogretim_Elemani o) {
-        Ders x = new Ders(dersAdı, o, this);
+    public void dersAc(String dersAdı,int subeSayisi, Ogretim_Elemani o) {
+        Ders x = new Ders(dersAdı, subeSayisi,o, this);
         dersler.add(x);
     }
 
